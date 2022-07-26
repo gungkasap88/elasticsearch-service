@@ -4,7 +4,7 @@ import com.example.elasticsearchservice.model.channel.PersonResponChannel;
 import lombok.Data;
 
 @Data
-public class PersonRespon {
+public class Person {
 
     private String statusCode;
     private String messageCode;

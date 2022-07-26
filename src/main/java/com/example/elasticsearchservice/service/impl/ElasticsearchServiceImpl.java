@@ -1,6 +1,6 @@
 package com.example.elasticsearchservice.service.impl;
 
-import com.example.elasticsearchservice.model.PersonRespon;
+import com.example.elasticsearchservice.model.Person;
 import com.example.elasticsearchservice.model.channel.PersonResponChannel;
 import com.example.elasticsearchservice.repository.PersonRepository;
 import com.example.elasticsearchservice.service.ElasticsearchService;
@@ -26,8 +26,8 @@ public class ElasticsearchServiceImpl implements ElasticsearchService {
     }
 
     @Override
-    public PersonRespon save(PersonResponChannel requestPerson) {
-        PersonRespon personRespon = new PersonRespon();
+    public Person save(PersonResponChannel requestPerson) {
+        Person personRespon = new Person();
         PersonResponChannel personResponChannel = new PersonResponChannel();
         try {
             personResponChannel.setId(requestPerson.getId());
